@@ -15,7 +15,7 @@ var answers=["true/false","Method","Lower Camel case","var","quotes"];
 var eachPoint=20;
 
 function percentage(score){
-  return "Your score is"+ parseInt((score/100)+"%");
+  return "Your score is"+ parseInt((score/100)+ %;
 }
 
 
