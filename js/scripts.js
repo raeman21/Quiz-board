@@ -12,7 +12,7 @@ var answer= $("input:radio[name=answer1,answer2,answer3,answer4,answer1qn5]:chec
     })
   }*/
 var answers=["true/false","Method","Lower Camel case","var","quotes"];
-var totalPoints=20;
+var eachPoint=20;
 
 function percentage(score){
   return "Your score is"+ parseInt((score/100)+"%");
@@ -34,3 +34,19 @@ $('.submit').click(function(event){
 if (answerOne === undefined || answerTwo === undefined || answerThree === undefined) {
     $('#triviaIncomplete').text('Kindly Complete Trivia Before Submitting');
     $('#triviaIncomplete').fadeOut(10000);
+    else if (answerOne === answers[1]) {
+      score += eachPoint;
+}
+if (answerTwo === answers[2]) {
+  score += eachPoint;
+}
+if (answerThree === answer[3]) {
+  score += eachPoint;
+}
+if (answerFour === answer[4]) {
+  score += eachPoint;
+if (answerFive === answer[5]) {
+  score += eachPoint;
+}
+
+}
