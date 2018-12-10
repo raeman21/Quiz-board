@@ -1,4 +1,4 @@
-#{Quiz Board}
+# {Quiz Board}
 ####  {An short quiz on JavaScript} {Monday December 10th 2018}
 #### By **{Mandela Rae}**
 ## Description
