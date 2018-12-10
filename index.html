@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/styles.css">
-
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <title>Excel School Quiz Board</title>
 </head>
 
@@ -16,130 +17,141 @@
     <div class="jumbotron">
       <h1>JavaScript Quiz </h1>
 
-      <p>The questions provided are multiple choice, Pick one answer that fits best for the corresponding question.</p>
+      <p>The questions provided are multiple choice<br> Pick one answer that fits best for the corresponding question.</p>
 
     </div>
-    <div class="well well-sm">
-      <p>How are booleans represented in JavaScript?</p>
-      <ul>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>right/wrong </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>left/right </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>upper/lower </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="right">
-            <li>true/false </li>
-          </label>
-      </ul>
-    </div>
-    <div class="well well-sm">
-      <p>Which of the following is a datatype in JavaScript?</p>
-      <ul>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" id="right">
-            <li>Method </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>Key</li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>Door </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>Floor </li>
-          </label>
-      </ul>
-    </div>
-    <div class="well well-sm">
-      <p>In JavaScript, what do we refer to the syntax used?</p>
-      <ul>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>Global Case </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>Upper Case </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="right">
-            <li>Lower Camel case </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>Juvenile case </li>
-          </label>
-      </ul>
-    </div>
-    <div class="well well-sm">
-      <p>With what statement do we initialize variables in JavaScript?</p>
-      <ul>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>Int </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="right">
-            <li>var </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="right">
-            <li>break </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="right">
-            <li>else </li>
-          </label>
-      </ul>
-    </div>
-    <div class="well well-sm">
-      <p>What syntax is correct for strings in JavaScript?</p>
-      <ul>
-        <div class="radio">
-          <label>
-            <input type="radio" name="answer" id="right">
-            <li>""/'' </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>{}/[] </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>:/; </li>
-          </label>
-          <label>
-            <input type="radio" name="answer" id="wrong">
-            <li>-/_ </li>
-          </label>
-      </ul>
-    </div>
-    <button class="btn btn-primary" id="answer">submit</button>
+    <form class="input" action="index.html" method="post">
+      <div class="well">
+        <p>1.How are booleans represented in JavaScript?</p>
+        <ul>
+          <div class="radio">
+            <label>
+              <input class="answer" type="radio" name="qn1" value="right/wrong">
+              <li>right/wrong </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn1" value="left/right">
+              <li>left/right </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn1" value="upper/lower">
+              <li>upper/lower </li>
+            </label>
+            <br>
+            <label id="rightAnswer1">
+              <input class="answer" type="radio" name="qn1" value="true/false">
+              <li>true/false </li>
+            </label>
+        </ul>
+      </div>
+      <div class="well">
+        <p>2.Which of the following is a datatype in JavaScript?</p>
+        <ul>
+          <div class="radio">
+            <label id="rightAnswer2">
+              <input class="answer" type="radio" name="qn2" value="Method">
+              <li>Method </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn2" value="Key">
+              <li>Key</li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn2" value="Door">
+              <li>Door </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn2" value="Floor">
+              <li>Floor </li>
+            </label>
+        </ul>
+      </div>
+      <div class="well">
+        <p>3.In JavaScript, what do we refer to the syntax used?</p>
+        <ul>
+          <div class="radio">
+            <label>
+              <input class="answer" type="radio" name="qn3" value="Global Case">
+              <li>Global Case </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn3" value="Upper Case">
+              <li>Upper Case </li>
+            </label>
+            <br>
+            <label id="rightAnswer3">
+              <input class="answer" type="radio" name="qn3" value="Lower Camel case">
+              <li>Lower Camel case </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn3" value="Juvenile case">
+              <li>Juvenile case </li>
+            </label>
+        </ul>
+      </div>
+      <div class="well">
+        <p>4.With what statement do we initialize variables in JavaScript?</p>
+        <ul>
+          <div class="radio">
+            <label>
+              <input class="answer" type="radio" name="qn4" value="Int">
+              <li>Int </li>
+            </label>
+            <br>
+            <label id="rightAnswer4">
+              <input class="answer" type="radio" name="qn4" value="var">
+              <li>var </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn4" value="break">
+              <li>break </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn4" value="else">
+              <li>else </li>
+            </label>
+        </ul>
+      </div>
+      <div class="well">
+        <p>5.What syntax is correct for strings in JavaScript?</p>
+        <ul>
+          <div class="radio">
+            <label id="rightAnswer5">
+              <input class="answer" type="radio" name="qn5" value="quotes">
+              <li> ""/'' </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn5" value="brackets">
+              <li>{}/[] </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn5" value="colons">
+              <li>:/; </li>
+            </label>
+            <br>
+            <label>
+              <input class="answer" type="radio" name="qn5" value="hyphen">
+              <li>-/_ </li>
+            </label>
+        </ul>
+      </div>
+    </form>
+    <button class="btn btn-danger" id="button">submit</button>
+    <h2 class="score" id="totalPoints"></h2>
 
-    <div id="totalPoints">
 
-    </div>
-    <script type="text/javascript" src="js/scripts.js"></script>
-
-
-
-
-
+  </div>
   </div>
 
   </div>
