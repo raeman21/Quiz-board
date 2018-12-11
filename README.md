@@ -13,8 +13,8 @@
 {jQuery Submit button lacking, working to fix this bug}
 ## Specifications
 *The app can take only one answer per questions*
-  {-Example Input:,2,3 }
-  {-Example output:[5]}
+  *{-Example Input:,2,3 }*
+  *{-Example output:[5]}*
 ## Technologies Used
 {The app uses HTML5, css3, JavaScript}
 ### license
