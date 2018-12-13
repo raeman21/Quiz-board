@@ -7,3 +7,6 @@
 body{
   background-image:url("../img/Galaxy-backgrpund-01-hq.jpg");
 }
+.totalResult{
+  display: none;
+}
