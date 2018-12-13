@@ -1,7 +1,17 @@
 .jumbotron{
-  background-color:#1354E9 ;
+  background-color:#13E9C2 ;
   text-align: center;
-  text-color:white;
+
+
+}
+h1{
+  color:white;
+  font-size: 10px;
+    font-family: font-family: 'Unlock', cursive;
+}
+.well{
+  padding: 3%;
+
 }
 
 body{
