@@ -1,9 +1,9 @@
 .jumbotron{
-  background-color:#13E9B9 ;
+  background-color:#1354E9 ;
   text-align: center;
-  text-color:#FBFCFC;
+  text-color:white;
 }
 
 body{
-  background-color:#13AEE9 ;
+  background-image:url("../img/Galaxy-backgrpund-01-hq.jpg");
 }
