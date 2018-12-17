@@ -19,7 +19,6 @@ https://raeman21.github.io/Quiz-board/.
 ## Known bugs
 {jQuery Submit button lacking, working to fix this bug}
 ## Specifications
-*The app can take only one answer per questions*
 +{Answer each question with the most appropriate answer}+
 +{After answering all the questions on the page,click submit}+
 +{Wait for application to tally and display results}+

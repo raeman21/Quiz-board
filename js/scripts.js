@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#button").click(function() {
-
+//Business logic//
     var answer = []
     answer.push($("input:radio[name=qn1]:checked").val())
     answer.push($("input:radio[name=qn2]:checked").val())
@@ -31,6 +31,7 @@ $(document).ready(function() {
       score += 20;
 
     }
+    //UI logic//
     $(".display").val(score);
   });
   $("#button").click(function() {
