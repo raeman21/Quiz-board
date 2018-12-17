@@ -1,3 +1,4 @@
+
 .jumbotron{
   background-color:#13E9C2 ;
   text-align: center;
@@ -11,7 +12,7 @@ h1{
 }
 .well{
   padding: 3%;
-
+  text-align: justify;
 }
 
 body{
